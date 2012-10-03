@@ -4,9 +4,8 @@ UffeAid
 Keep snafu in touch with the world
 
 Since his employer has blocked all ports except 80, the little guy needed some way to stay in touch. 
-Extremly crude script to display irc conversation on web page with hilight for the man in question
 
-This script is executed as a cron job once every minute
+Extremly crude script to display irc conversation on web page with hilight for the man in questioni with the addition of a gtalk message containing hilighted lines.
+The reverse script send the last line on snafus gtalk conversation to irc if it contains the correct hastag
 
-The last row is used to send all rows with specified word to snafus gtalk via ii (http://tools.suckless.org/ii/), connected to bitlbee (http://www.bitlbee.org/). 
-Commented out until I figure out a way to make it smarter. Needs to keep track of lines that has been sent previously.
+Software needed: ii (http://tools.suckless.org/ii/), connected to bitlbee (http://www.bitlbee.org/). Inotify-tools (should be in your repo)
